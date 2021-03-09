@@ -1,8 +1,9 @@
 # インストールした discord.py を読み込む
 import discord
+import sys
 
 # 自分のBotのアクセストークンに置き換えてください
-TOKEN = 'ODE4ODIzNDMzMzUyNzczNjUy.YEdqvw.s1LAAr3OLJ3e7DvHcaIIQ7zc8Os'
+TOKEN = sys.argv[1]
 
 # 接続に必要なオブジェクトを生成
 client = discord.Client()
@@ -16,9 +17,7 @@ async def on_ready():
 # メッセージ受信時に動作する処理
 @client.event
 async def on_message(message):
-    # メッセージ送信者がBotだった場合は無視する
-    if message.author.bot:
-        return
+
     # 「/neko」と発言したら「にゃーん」が返る処理
     if message.content == '/neko':
         await message.channel.send('にゃーん')
