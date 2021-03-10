@@ -1,14 +1,24 @@
 import discord
 import sys
+import subprocess as sub
 
 TOKEN = sys.argv[1] #トークン
 CHANNELID = 767327887719399446 #チャンネルID
-
 client = discord.Client() #ディスコードインスタンス生成
+
+#キーワードリスト
+messageList = {
+    'test':'test message'
+    ,'うんこ':'ｳﾝｺｫｫｫｫｫｫｫｫｫ!!!!!'
+    ,'うんこよし！':'ｳﾝｺﾖｼ!'
+    }
+
+
 
 @client.event
 async def on_ready(): #起動時に動作する処理
     print('login')
+    await minecraftServerStart()
     #await oha() #起動時に挨拶　うるせーからいったんコメントアウト
 
 async def oha(): #挨拶
@@ -26,18 +36,16 @@ async def on_message(message): #メッセージ受信時に動作する処理
 
 async def reply(message): #リプライ
     if client.user in message.mentions:
-        message.channel.send('ﾅﾝﾔﾎﾞｹ')
+        message.channel.send('ﾅﾝﾔﾎﾞｹｪ!')
+
 
 async def reaction(message): #通常メッセージ
-    #キーワードリスト
-    messageList = {
-        'neko':'ﾆｬｰﾝ'
-        ,'うんこ':'ｳﾝｺｫｫｫｫｫｫｫｫｫ!!!!!'
-        ,'うんこよし！':'ｳﾝｺﾖｼ!'
-        }
-
     #ライブラリからキーワード持ってきて返す
     if message.content in messageList:
         await message.channel.send(messageList[message.content])
+
+async def minecraftServerStart():
+    sub.call(['/home/pi/Desktop/program/server/start.sh'])
+
 
 client.run(TOKEN) #Botの起動とDiscordサーバーへの接続
