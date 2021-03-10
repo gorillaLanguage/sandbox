@@ -1,33 +1,26 @@
-# インストールした discord.py を読み込む
 import discord
 import sys
 
-# 自分のBotのアクセストークンに置き換えてください
-TOKEN = sys.argv[1]
+TOKEN = sys.argv[1] #トークン
+CHANNELID = 767327887719399446 #チャンネルID
 
-# チャンネルのID
-CHANNELID = 767327887719399446
+client = discord.Client() #ディスコードインスタンス生成
 
-# 接続に必要なオブジェクトを生成
-client = discord.Client()
-
-# 起動時に動作する処理
 @client.event
-async def on_ready():
-    # 起動したらターミナルにログイン通知が表示される
+async def on_ready(): #起動時に動作する処理
     print('login')
-    await oha()
+    #await oha() #起動時に挨拶　うるせーからいったんコメントアウト
 
-async def oha():
+async def oha(): #挨拶
     channel = client.get_channel(CHANNELID)
     await channel.send('ﾏｲﾝｸﾗﾌﾄｻｰﾊﾞｰ 管理ﾎﾞｯﾄ ﾀﾞﾖ')
     await channel.send('ﾎﾞｸｶﾞｵﾝﾗｲﾝﾉ時 ﾊ ｻｰﾊﾞｰ起動中 ﾀﾞﾖ')
     await channel.send('ｿﾉｳﾁ 色々ﾃﾞｷﾙﾖｳﾆﾅﾙ ｹﾄﾞ 今ﾊｳﾝｺﾎﾞｯﾄ ﾀﾞﾖ')
 
 
-#メッセージ受信時に動作する処理
+
 @client.event
-async def on_message(message):
+async def on_message(message): #メッセージ受信時に動作する処理
     
     #キーワードリスト
     messageList = {
@@ -40,5 +33,4 @@ async def on_message(message):
     if message.content in messageList:
         await message.channel.send(messageList[message.content])
 
-# Botの起動とDiscordサーバーへの接続
-client.run(TOKEN)
+client.run(TOKEN) #Botの起動とDiscordサーバーへの接続
