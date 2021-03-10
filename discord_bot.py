@@ -21,7 +21,14 @@ async def oha(): #挨拶
 
 @client.event
 async def on_message(message): #メッセージ受信時に動作する処理
-    
+    await reply(message)
+    await reaction(message)
+
+async def reply(message): #リプライ
+    if client.user in message.mentions:
+        message.channel.send('ﾅﾝﾔﾎﾞｹ')
+
+async def reaction(message): #通常メッセージ
     #キーワードリスト
     messageList = {
         'neko':'ﾆｬｰﾝ'
