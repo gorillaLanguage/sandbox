@@ -18,7 +18,6 @@ messageList = {
 @client.event
 async def on_ready(): #起動時に動作する処理
     print('login')
-    await minecraftServerStart()
     #await oha() #起動時に挨拶　うるせーからいったんコメントアウト
 
 async def oha(): #挨拶
@@ -40,6 +39,10 @@ async def reply(message): #リプライ
 
 
 async def reaction(message): #通常メッセージ
+
+    if message.content == 'start':
+        await minecraftServerStart()
+
     #ライブラリからキーワード持ってきて返す
     if message.content in messageList:
         await message.channel.send(messageList[message.content])
