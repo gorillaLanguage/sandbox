@@ -1,0 +1,15 @@
+/Users/tkzm/Desktop/program/sandbox/cs/obj/Debug/net6.0/cs.csproj.AssemblyReference.cache
+/Users/tkzm/Desktop/program/sandbox/cs/obj/Debug/net6.0/cs.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tkzm/Desktop/program/sandbox/cs/obj/Debug/net6.0/cs.AssemblyInfoInputs.cache
+/Users/tkzm/Desktop/program/sandbox/cs/obj/Debug/net6.0/cs.AssemblyInfo.cs
+/Users/tkzm/Desktop/program/sandbox/cs/obj/Debug/net6.0/cs.csproj.CoreCompileInputs.cache
+/Users/tkzm/Desktop/program/sandbox/cs/bin/Debug/net6.0/cs
+/Users/tkzm/Desktop/program/sandbox/cs/bin/Debug/net6.0/cs.deps.json
+/Users/tkzm/Desktop/program/sandbox/cs/bin/Debug/net6.0/cs.runtimeconfig.json
+/Users/tkzm/Desktop/program/sandbox/cs/bin/Debug/net6.0/cs.dll
+/Users/tkzm/Desktop/program/sandbox/cs/bin/Debug/net6.0/cs.pdb
+/Users/tkzm/Desktop/program/sandbox/cs/obj/Debug/net6.0/cs.dll
+/Users/tkzm/Desktop/program/sandbox/cs/obj/Debug/net6.0/refint/cs.dll
+/Users/tkzm/Desktop/program/sandbox/cs/obj/Debug/net6.0/cs.pdb
+/Users/tkzm/Desktop/program/sandbox/cs/obj/Debug/net6.0/cs.genruntimeconfig.cache
+/Users/tkzm/Desktop/program/sandbox/cs/obj/Debug/net6.0/ref/cs.dll
