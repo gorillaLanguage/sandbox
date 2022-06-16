@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tkzm/Desktop/program/sandbox/cs/cs.csproj": {}
+    "D:\\work\\program\\sandbox\\cs\\cs.csproj": {}
   },
   "projects": {
-    "/Users/tkzm/Desktop/program/sandbox/cs/cs.csproj": {
+    "D:\\work\\program\\sandbox\\cs\\cs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tkzm/Desktop/program/sandbox/cs/cs.csproj",
+        "projectUniqueName": "D:\\work\\program\\sandbox\\cs\\cs.csproj",
         "projectName": "cs",
-        "projectPath": "/Users/tkzm/Desktop/program/sandbox/cs/cs.csproj",
-        "packagesPath": "/Users/tkzm/.nuget/packages/",
-        "outputPath": "/Users/tkzm/Desktop/program/sandbox/cs/obj/",
+        "projectPath": "D:\\work\\program\\sandbox\\cs\\cs.csproj",
+        "packagesPath": "C:\\Users\\and\\.nuget\\packages\\",
+        "outputPath": "D:\\work\\program\\sandbox\\cs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/tkzm/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\and\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = PrimeService
+build_property.ProjectDir = d:\work\program\sandbox\cs\unit-testing-using-mstest\PrimeService\
