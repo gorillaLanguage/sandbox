@@ -2,7 +2,47 @@
     class Program{
         static void Main(string[] args){
             Console.WriteLine("Hello");
+
+            day d = day.Sunday;
+
+            switch (d)
+            {
+                case day.Sunday:
+                    Console.WriteLine(day.Sunday);
+                default:
+                    Console.WriteLine("default");
+            }
+
+            cs.sub subbbb = new sub();
+            subbbb.setStr("これ");
+            subbbb.print();
         }
+    }
+
+    class sub{
+        private string str = "";
+
+        public void setStr( string a){
+            str = a;
+        }
+
+        public string getStr(){
+            return str;
+        }
+
+        public void print(){
+            Console.WriteLine(str);
+        }
+    }
+
+    enum day{
+    Sunday,
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday
     }
 }
 
